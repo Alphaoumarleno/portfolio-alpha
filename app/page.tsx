@@ -229,7 +229,7 @@ export default function Home() {
               </a>
 
               <a
-                href="#skills"
+                href="#experience"
                 style={{
                   textDecoration: "none",
                   color: "#fff",
@@ -240,7 +240,7 @@ export default function Home() {
                   fontWeight: 700,
                 }}
               >
-                Explorer mes compétences
+                Voir mon expérience
               </a>
             </div>
           </div>
@@ -341,6 +341,104 @@ export default function Home() {
                 {skill}
               </span>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="experience"
+        style={{
+          maxWidth: "1180px",
+          margin: "0 auto",
+          padding: "28px 24px",
+        }}
+      >
+        <div style={{ marginBottom: "20px" }}>
+          <h2 style={{ fontSize: "34px", margin: "0 0 12px", fontWeight: 800 }}>
+            Expérience
+          </h2>
+          <p
+            style={{
+              color: "#cbd5e1",
+              fontSize: "17px",
+              lineHeight: 1.7,
+              maxWidth: "800px",
+            }}
+          >
+            Une expérience orientée solutions métier, développement Salesforce,
+            infrastructure et sécurité.
+          </p>
+        </div>
+
+        <div style={{ display: "grid", gap: "20px" }}>
+          <div
+            style={{
+              background: "rgba(15, 23, 42, 0.6)",
+              border: "1px solid rgba(148, 163, 184, 0.12)",
+              borderRadius: "22px",
+              padding: "24px",
+              boxShadow: "0 10px 30px rgba(0,0,0,0.18)",
+            }}
+          >
+            <div
+              style={{
+                color: "#7dd3fc",
+                fontSize: "14px",
+                fontWeight: 700,
+                marginBottom: "10px",
+              }}
+            >
+              Expérience professionnelle
+            </div>
+
+            <h3
+              style={{
+                fontSize: "24px",
+                margin: "0 0 8px",
+                fontWeight: 800,
+              }}
+            >
+              Consultant Développeur Salesforce
+            </h3>
+
+            <div
+              style={{
+                color: "#cbd5e1",
+                fontSize: "18px",
+                fontWeight: 600,
+                marginBottom: "14px",
+              }}
+            >
+              D&A Technologies
+            </div>
+
+            <p
+              style={{
+                color: "#cbd5e1",
+                lineHeight: 1.75,
+                fontSize: "16px",
+                marginBottom: "16px",
+              }}
+            >
+              Participation à la conception et à l’implémentation de solutions
+              Salesforce orientées métier, avec modélisation des données,
+              développement Apex et LWC, automatisation via Flow et optimisation
+              des processus.
+            </p>
+
+            <ul
+              style={{
+                margin: 0,
+                paddingLeft: "20px",
+                color: "#e2e8f0",
+                lineHeight: 1.9,
+              }}
+            >
+              <li>Conception de solutions Salesforce adaptées aux besoins métiers</li>
+              <li>Développement Apex et Lightning Web Components</li>
+              <li>Automatisation des processus avec Flow Builder</li>
+              <li>Travail sur des cas concrets autour des CEE</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -513,6 +611,25 @@ export default function Home() {
                 style={{ color: "#38bdf8" }}
               >
                 alphaoumarleno.com
+              </a>
+            </div>
+
+            <div style={{ marginTop: "10px" }}>
+              <a
+                href="/cv.pdf"
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  textDecoration: "none",
+                  color: "#081225",
+                  background: "#38bdf8",
+                  padding: "12px 18px",
+                  borderRadius: "12px",
+                  fontWeight: 700,
+                  display: "inline-block",
+                }}
+              >
+                Télécharger mon CV
               </a>
             </div>
           </div>

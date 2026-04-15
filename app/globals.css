@@ -1,12 +1,72 @@
+/* Reset basique */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Scroll fluide */
 html {
   scroll-behavior: smooth;
 }
 
-* {
-  box-sizing: border-box;
+/* Body global */
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  background: #0f172a;
+  color: #ffffff;
+  line-height: 1.6;
 }
 
-body {
-  margin: 0;
-  padding: 0;
+/* Liens */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Boutons */
+button {
+  cursor: pointer;
+  border: none;
+}
+
+/* Titres */
+h1, h2, h3, h4 {
+  line-height: 1.2;
+}
+
+/* Scrollbar (option premium) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #38bdf8;
+  border-radius: 10px;
+}
+
+/* Animation douce */
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
