@@ -55,7 +55,8 @@ export default function Home() {
         fontFamily: "Inter, Arial, Helvetica, sans-serif",
       }}
     >
-      <section
+    
+   <section
         style={{
           maxWidth: "1180px",
           margin: "0 auto",
