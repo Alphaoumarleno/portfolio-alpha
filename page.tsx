@@ -142,20 +142,12 @@ export default function Home() {
               GitHub
             </a>
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/alpha-oumar-leno/"
               target="_blank"
               rel="noreferrer"
-              style={{
-                textDecoration: "none",
-                color: "#fff",
-                border: "1px solid #334155",
-                padding: "12px 18px",
-                borderRadius: "12px",
-                background: "rgba(15, 23, 42, 0.7)",
-                fontWeight: 600,
-              }}
-            >
-              LinkedIn
+              style={{ color: "#38bdf8" }}
+	    >
+  		Voir mon profil LinkedIn
             </a>
             <a
               href="/cv.pdf"
