@@ -52,8 +52,7 @@ export default function Home() {
         background:
           "linear-gradient(180deg, #081225 0%, #0b1324 35%, #0f172a 100%)",
         color: "#ffffff",
-        fontFamily:
-          "Inter, Arial, Helvetica, sans-serif",
+        fontFamily: "Inter, Arial, Helvetica, sans-serif",
       }}
     >
       <section
@@ -107,6 +106,24 @@ export default function Home() {
             >
               GitHub
             </a>
+
+            <a
+              href="https://www.linkedin.com/in/alpha-oumar-leno/"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                textDecoration: "none",
+                color: "#fff",
+                border: "1px solid #334155",
+                padding: "12px 18px",
+                borderRadius: "12px",
+                background: "rgba(15, 23, 42, 0.7)",
+                fontWeight: 600,
+              }}
+            >
+              LinkedIn
+            </a>
+
             <a
               href="#contact"
               style={{
@@ -210,6 +227,7 @@ export default function Home() {
               >
                 Voir mes projets
               </a>
+
               <a
                 href="#skills"
                 style={{
@@ -385,6 +403,7 @@ export default function Home() {
               >
                 {project.category}
               </div>
+
               <h3
                 style={{
                   fontSize: "22px",
@@ -395,6 +414,7 @@ export default function Home() {
               >
                 {project.title}
               </h3>
+
               <p
                 style={{
                   color: "#cbd5e1",
@@ -410,6 +430,7 @@ export default function Home() {
       </section>
 
       <section
+        id="contact"
         style={{
           maxWidth: "1180px",
           margin: "0 auto",
@@ -424,11 +445,11 @@ export default function Home() {
             borderRadius: "26px",
             padding: "32px",
           }}
-          id="contact"
         >
           <h2 style={{ fontSize: "34px", margin: "0 0 14px", fontWeight: 800 }}>
             Contact
           </h2>
+
           <p
             style={{
               color: "#e2e8f0",
@@ -456,14 +477,43 @@ export default function Home() {
                 github.com/Alphaoumarleno
               </a>
             </div>
+
+            <div style={{ color: "#f8fafc", fontSize: "17px" }}>
+              LinkedIn :{" "}
+              <a
+                href="https://www.linkedin.com/in/alpha-oumar-leno/"
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: "#38bdf8" }}
+              >
+                linkedin.com/in/alpha-oumar-leno
+              </a>
+            </div>
+
+            <div style={{ color: "#f8fafc", fontSize: "17px" }}>
+              Email :{" "}
+              <a
+                href="mailto:lenoalphaoumar@gmail.com"
+                style={{ color: "#38bdf8" }}
+              >
+                lenoalphaoumar@gmail.com
+              </a>
+            </div>
+
             <div style={{ color: "#f8fafc", fontSize: "17px" }}>
               Localisation : Rabat / Casablanca
             </div>
+
             <div style={{ color: "#f8fafc", fontSize: "17px" }}>
-              Email : lenoalphaoumar@gmail.com.com
-            </div>
-            <div style={{ color: "#f8fafc", fontSize: "17px" }}>
-              Domaine : alphaoumarleno.com
+              Domaine :{" "}
+              <a
+                href="https://alphaoumarleno.com"
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: "#38bdf8" }}
+              >
+                alphaoumarleno.com
+              </a>
             </div>
           </div>
         </div>
