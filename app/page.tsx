@@ -460,7 +460,7 @@ export default function Home() {
               Localisation : Rabat / Casablanca
             </div>
             <div style={{ color: "#f8fafc", fontSize: "17px" }}>
-              Email : ton-email@exemple.com
+              Email : lenoalphaoumar@gmail.com.com
             </div>
             <div style={{ color: "#f8fafc", fontSize: "17px" }}>
               Domaine : alphaoumarleno.com
