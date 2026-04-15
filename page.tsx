@@ -141,14 +141,24 @@ export default function Home() {
             >
               GitHub
             </a>
+
             <a
               href="https://www.linkedin.com/in/alpha-oumar-leno/"
               target="_blank"
               rel="noreferrer"
-              style={{ color: "#38bdf8" }}
-	    >
-  		Voir mon profil LinkedIn
+              style={{
+                textDecoration: "none",
+                color: "#fff",
+                border: "1px solid #334155",
+                padding: "12px 18px",
+                borderRadius: "12px",
+                background: "rgba(15, 23, 42, 0.7)",
+                fontWeight: 600,
+              }}
+            >
+              LinkedIn
             </a>
+
             <a
               href="/cv.pdf"
               target="_blank"
@@ -218,8 +228,8 @@ export default function Home() {
                 lineHeight: 1.5,
               }}
             >
-              Je conçois des solutions techniques à forte valeur ajoutée combinant{" "}
-              <span style={{ color: "#38bdf8" }}>Salesforce</span>,
+              Je conçois des solutions techniques à forte valeur ajoutée
+              combinant <span style={{ color: "#38bdf8" }}>Salesforce</span>,
               <span style={{ color: "#38bdf8" }}> Cloud</span>,
               <span style={{ color: "#38bdf8" }}> IoT</span> et
               <span style={{ color: "#38bdf8" }}> DevOps</span>.
@@ -235,13 +245,56 @@ export default function Home() {
               }}
             >
               Actuellement en formation en Ingénierie des Systèmes Ubiquitaires
+              et Distribués à l’INPT Rabat, je développe des plateformes métier,
+              des systèmes connectés et des architectures cloud avec une forte
+              orientation automatisation, fiabilité et impact opérationnel.
+            </p>
+
+            <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
+              <a
+                href="#projects"
+                style={{
+                  textDecoration: "none",
+                  color: "#081225",
+                  background: "#38bdf8",
+                  padding: "14px 22px",
+                  borderRadius: "14px",
+                  fontWeight: 700,
+                }}
+              >
+                Voir mes projets
+              </a>
+
+              <a
+                href="#experience"
+                style={{
+                  textDecoration: "none",
+                  color: "#fff",
+                  border: "1px solid #334155",
+                  background: "rgba(15, 23, 42, 0.7)",
+                  padding: "14px 22px",
+                  borderRadius: "14px",
+                  fontWeight: 700,
                 }}
               >
                 Voir mon expérience
               </a>
+
+              <a
+                href="#contact"
+                style={{
+                  textDecoration: "none",
+                  color: "#fff",
+                  border: "1px solid #334155",
+                  background: "rgba(15, 23, 42, 0.7)",
                   padding: "14px 22px",
                   borderRadius: "14px",
+                  fontWeight: 700,
+                }}
               >
+                Me contacter
+              </a>
+            </div>
           </div>
 
           <div
@@ -391,6 +444,7 @@ export default function Home() {
               >
                 {exp.period}
               </div>
+
               <h3
                 style={{
                   fontSize: "24px",
@@ -400,6 +454,7 @@ export default function Home() {
               >
                 {exp.role}
               </h3>
+
               <div
                 style={{
                   color: "#cbd5e1",
@@ -410,6 +465,7 @@ export default function Home() {
               >
                 {exp.company}
               </div>
+
               <p
                 style={{
                   color: "#cbd5e1",
@@ -420,6 +476,7 @@ export default function Home() {
               >
                 {exp.description}
               </p>
+
               <ul
                 style={{
                   margin: 0,
@@ -450,85 +507,44 @@ export default function Home() {
             Projets stratégiques
           </h2>
           <p
-                Me contacter
-            </div>
             style={{
               color: "#cbd5e1",
-              </a>
-                  fontWeight: 700,
               fontSize: "17px",
               lineHeight: 1.7,
               maxWidth: "800px",
-                }}
-                  textDecoration: "none",
             }}
-                  color: "#fff",
-                  border: "1px solid #334155",
           >
-                  background: "rgba(15, 23, 42, 0.7)",
-                style={{
             Des réalisations concrètes illustrant mon positionnement sur
-              <a
-                href="#contact"
             Salesforce, le cloud, l’automatisation et l’IoT.
-                  borderRadius: "14px",
-                  fontWeight: 700,
           </p>
-                  padding: "14px 22px",
-                  border: "1px solid #334155",
         </div>
-                  background: "rgba(15, 23, 42, 0.7)",
-                  textDecoration: "none",
 
         <div
           style={{
-                  color: "#fff",
             display: "grid",
-              et Distribués à l’INPT Rabat, je développe des plateformes métier,
-                style={{
             gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
             gap: "20px",
-              <a
-                href="#experience"
           }}
-              des systèmes connectés et des architectures cloud avec une forte
         >
           {projects.map((project) => (
             <div
-              orientation automatisation, fiabilité et impact opérationnel.
               key={project.title}
               style={{
                 background: "rgba(15, 23, 42, 0.6)",
                 border: "1px solid rgba(148, 163, 184, 0.12)",
                 borderRadius: "22px",
-              </a>
-            </p>
-                Voir mes projets
                 padding: "24px",
                 boxShadow: "0 10px 30px rgba(0,0,0,0.18)",
-                }}
-              >
-
-                  borderRadius: "14px",
               }}
             >
               <div
-                  fontWeight: 700,
-                  background: "#38bdf8",
                 style={{
                   display: "inline-block",
-                  padding: "14px 22px",
-            <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
-              <a
                   marginBottom: "14px",
-                  color: "#081225",
-                href="#projects"
                   padding: "7px 12px",
                   borderRadius: "999px",
-                  textDecoration: "none",
                   background: "rgba(56, 189, 248, 0.12)",
                   color: "#7dd3fc",
-
                   border: "1px solid rgba(56,189,248,0.2)",
                   fontSize: "13px",
                   fontWeight: 700,
@@ -536,6 +552,7 @@ export default function Home() {
               >
                 {project.category}
               </div>
+
               <h3
                 style={{
                   fontSize: "22px",
@@ -546,6 +563,7 @@ export default function Home() {
               >
                 {project.title}
               </h3>
+
               <p
                 style={{
                   color: "#cbd5e1",
@@ -556,6 +574,7 @@ export default function Home() {
               >
                 {project.description}
               </p>
+
               <div
                 style={{
                   color: "#94a3b8",
@@ -590,6 +609,7 @@ export default function Home() {
           <h2 style={{ fontSize: "34px", margin: "0 0 14px", fontWeight: 800 }}>
             Contact
           </h2>
+
           <p
             style={{
               color: "#e2e8f0",
@@ -608,13 +628,11 @@ export default function Home() {
           <div style={{ display: "grid", gap: "12px" }}>
             <div style={{ color: "#f8fafc", fontSize: "17px" }}>
               Email :{" "}
-              <a
-                href="mailto:TON_EMAIL_ICI"
-                style={{ color: "#38bdf8" }}
-              >
-                TON_EMAIL_ICI
+              <a href="mailto:lenoalphaoumar@gmail.com" style={{ color: "#38bdf8" }}>
+                lenoalphaoumar@gmail.com
               </a>
             </div>
+
             <div style={{ color: "#f8fafc", fontSize: "17px" }}>
               GitHub :{" "}
               <a
@@ -626,20 +644,23 @@ export default function Home() {
                 github.com/Alphaoumarleno
               </a>
             </div>
+
             <div style={{ color: "#f8fafc", fontSize: "17px" }}>
               LinkedIn :{" "}
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/alpha-oumar-leno/"
                 target="_blank"
                 rel="noreferrer"
                 style={{ color: "#38bdf8" }}
               >
-                Ajouter votre lien LinkedIn
+                linkedin.com/in/alpha-oumar-leno
               </a>
             </div>
+
             <div style={{ color: "#f8fafc", fontSize: "17px" }}>
               Localisation : Rabat / Casablanca
             </div>
+
             <div style={{ color: "#f8fafc", fontSize: "17px" }}>
               Domaine :{" "}
               <a
