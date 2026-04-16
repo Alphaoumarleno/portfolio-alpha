@@ -55,12 +55,12 @@ export default function Home() {
         fontFamily: "Inter, Arial, Helvetica, sans-serif",
       }}
     >
-    
-   <section
+      {/* HERO */}
+      <section
         style={{
           maxWidth: "1180px",
           margin: "0 auto",
-          padding: "40px 24px 24px",
+          padding: "40px 20px 24px",
         }}
       >
         <div
@@ -70,7 +70,7 @@ export default function Home() {
             alignItems: "center",
             gap: "16px",
             flexWrap: "wrap",
-            marginBottom: "48px",
+            marginBottom: "32px",
           }}
         >
           <div>
@@ -144,8 +144,9 @@ export default function Home() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "1.4fr 0.9fr",
-            gap: "28px",
+            gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+            gap: "24px",
+            alignItems: "center",
           }}
         >
           <div
@@ -153,7 +154,7 @@ export default function Home() {
               background: "rgba(15, 23, 42, 0.55)",
               border: "1px solid rgba(148, 163, 184, 0.15)",
               borderRadius: "24px",
-              padding: "32px",
+              padding: "28px",
               boxShadow: "0 20px 60px rgba(0,0,0,0.25)",
             }}
           >
@@ -175,7 +176,7 @@ export default function Home() {
 
             <h1
               style={{
-                fontSize: "clamp(42px, 7vw, 72px)",
+                fontSize: "clamp(36px, 8vw, 72px)",
                 lineHeight: 1.05,
                 margin: "0 0 18px",
                 fontWeight: 800,
@@ -186,7 +187,7 @@ export default function Home() {
 
             <p
               style={{
-                fontSize: "clamp(18px, 2.3vw, 26px)",
+                fontSize: "clamp(18px, 3.8vw, 26px)",
                 color: "#cbd5e1",
                 marginBottom: "24px",
                 lineHeight: 1.5,
@@ -201,10 +202,9 @@ export default function Home() {
 
             <p
               style={{
-                fontSize: "18px",
+                fontSize: "17px",
                 color: "#e2e8f0",
                 lineHeight: 1.8,
-                maxWidth: "760px",
                 marginBottom: "28px",
               }}
             >
@@ -248,58 +248,36 @@ export default function Home() {
 
           <div
             style={{
-              display: "grid",
-              gap: "18px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              padding: "10px",
             }}
           >
-            {[
-              ["Spécialité", "Salesforce, Cloud & IoT"],
-              ["Focus", "Automatisation, Data Model, CI/CD"],
-              ["Environnement", "AWS, Docker, React, Flutter"],
-              ["Localisation", "Rabat / Casablanca"],
-            ].map(([label, value]) => (
-              <div
-                key={label}
-                style={{
-                  background: "rgba(15, 23, 42, 0.55)",
-                  border: "1px solid rgba(148, 163, 184, 0.15)",
-                  borderRadius: "20px",
-                  padding: "22px",
-                }}
-              >
-                <div
-                  style={{
-                    color: "#7dd3fc",
-                    fontSize: "14px",
-                    fontWeight: 700,
-                    marginBottom: "8px",
-                    letterSpacing: "0.4px",
-                  }}
-                >
-                  {label}
-                </div>
-                <div
-                  style={{
-                    color: "#f8fafc",
-                    fontSize: "20px",
-                    fontWeight: 700,
-                    lineHeight: 1.4,
-                  }}
-                >
-                  {value}
-                </div>
-              </div>
-            ))}
+            <img
+              src="/preview.png"
+              alt="Alpha Oumar Leno"
+              style={{
+                width: "100%",
+                maxWidth: "320px",
+                aspectRatio: "1 / 1",
+                objectFit: "cover",
+                borderRadius: "50%",
+                border: "4px solid #38bdf8",
+                boxShadow: "0 0 40px rgba(56,189,248,0.5)",
+              }}
+            />
           </div>
         </div>
       </section>
 
+      {/* SKILLS */}
       <section
         id="skills"
         style={{
           maxWidth: "1180px",
           margin: "0 auto",
-          padding: "28px 24px",
+          padding: "28px 20px",
         }}
       >
         <div
@@ -307,10 +285,10 @@ export default function Home() {
             background: "rgba(15, 23, 42, 0.48)",
             border: "1px solid rgba(148, 163, 184, 0.12)",
             borderRadius: "24px",
-            padding: "30px",
+            padding: "28px",
           }}
         >
-          <h2 style={{ fontSize: "34px", margin: "0 0 12px", fontWeight: 800 }}>
+          <h2 style={{ fontSize: "clamp(28px, 6vw, 34px)", margin: "0 0 12px", fontWeight: 800 }}>
             Compétences clés
           </h2>
           <p
@@ -346,16 +324,17 @@ export default function Home() {
         </div>
       </section>
 
+      {/* EXPERIENCE */}
       <section
         id="experience"
         style={{
           maxWidth: "1180px",
           margin: "0 auto",
-          padding: "28px 24px",
+          padding: "28px 20px",
         }}
       >
         <div style={{ marginBottom: "20px" }}>
-          <h2 style={{ fontSize: "34px", margin: "0 0 12px", fontWeight: 800 }}>
+          <h2 style={{ fontSize: "clamp(28px, 6vw, 34px)", margin: "0 0 12px", fontWeight: 800 }}>
             Expérience
           </h2>
           <p
@@ -394,7 +373,7 @@ export default function Home() {
 
             <h3
               style={{
-                fontSize: "24px",
+                fontSize: "clamp(22px, 5vw, 24px)",
                 margin: "0 0 8px",
                 fontWeight: 800,
               }}
@@ -444,16 +423,17 @@ export default function Home() {
         </div>
       </section>
 
+      {/* PROJECTS */}
       <section
         id="projects"
         style={{
           maxWidth: "1180px",
           margin: "0 auto",
-          padding: "28px 24px",
+          padding: "28px 20px",
         }}
       >
         <div style={{ marginBottom: "20px" }}>
-          <h2 style={{ fontSize: "34px", margin: "0 0 12px", fontWeight: 800 }}>
+          <h2 style={{ fontSize: "clamp(28px, 6vw, 34px)", margin: "0 0 12px", fontWeight: 800 }}>
             Projets stratégiques
           </h2>
           <p
@@ -528,12 +508,13 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CONTACT */}
       <section
         id="contact"
         style={{
           maxWidth: "1180px",
           margin: "0 auto",
-          padding: "28px 24px 60px",
+          padding: "28px 20px 60px",
         }}
       >
         <div
@@ -545,7 +526,7 @@ export default function Home() {
             padding: "32px",
           }}
         >
-          <h2 style={{ fontSize: "34px", margin: "0 0 14px", fontWeight: 800 }}>
+          <h2 style={{ fontSize: "clamp(28px, 6vw, 34px)", margin: "0 0 14px", fontWeight: 800 }}>
             Contact
           </h2>
 
