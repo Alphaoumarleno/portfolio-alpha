@@ -45,114 +45,156 @@ export default function Home() {
     },
   ];
 
+  const experiences = [
+    {
+      title: "Consultant Développeur Salesforce",
+      company: "D&A Technologies",
+      description:
+        "Conception de solutions Salesforce orientées métier avec modélisation des données, développement Apex/LWC et automatisation via Flow.",
+    },
+    {
+      title: "Responsable IT / Réseau & Sécurité",
+      company: "Administration / Formation",
+      description:
+        "Gestion d’infrastructures, sécurité informatique, administration systèmes et accompagnement technique dans des environnements opérationnels.",
+    },
+  ];
+
   return (
     <main
       style={{
         minHeight: "100vh",
         background:
-          "linear-gradient(180deg, #081225 0%, #0b1324 35%, #0f172a 100%)",
+          "linear-gradient(180deg, #06101f 0%, #081225 35%, #0b1324 100%)",
         color: "#ffffff",
         fontFamily: "Inter, Arial, Helvetica, sans-serif",
       }}
     >
-      {/* HERO */}
-      <section
+      {/* HEADER FIXE */}
+      <header
         style={{
-          maxWidth: "1180px",
-          margin: "0 auto",
-          padding: "40px 20px 24px",
+          position: "sticky",
+          top: 0,
+          zIndex: 50,
+          backdropFilter: "blur(12px)",
+          background: "rgba(3, 10, 24, 0.78)",
+          borderBottom: "1px solid rgba(148,163,184,0.12)",
         }}
       >
         <div
           style={{
+            maxWidth: "1180px",
+            margin: "0 auto",
+            padding: "14px 20px",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
             gap: "16px",
             flexWrap: "wrap",
-            marginBottom: "32px",
           }}
         >
           <div>
             <div
               style={{
                 color: "#38bdf8",
-                fontWeight: 700,
-                fontSize: "15px",
-                marginBottom: "8px",
-                letterSpacing: "0.5px",
+                fontWeight: 800,
+                fontSize: "14px",
+                letterSpacing: "0.6px",
               }}
             >
               PORTFOLIO PROFESSIONNEL
             </div>
-            <div style={{ color: "#94a3b8", fontSize: "15px" }}>
+            <div
+              style={{
+                color: "#cbd5e1",
+                fontSize: "14px",
+                marginTop: "4px",
+              }}
+            >
               Alpha Oumar Leno • Cloud • Salesforce • IoT • DevOps
             </div>
           </div>
 
-          <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
+          <nav
+            style={{
+              display: "flex",
+              gap: "10px",
+              flexWrap: "wrap",
+              alignItems: "center",
+            }}
+          >
             <a
-              href="https://github.com/Alphaoumarleno"
-              target="_blank"
-              rel="noreferrer"
+              href="#skills"
               style={{
-                textDecoration: "none",
-                color: "#fff",
-                border: "1px solid #334155",
-                padding: "12px 18px",
-                borderRadius: "12px",
-                background: "rgba(15, 23, 42, 0.7)",
-                fontWeight: 600,
+                padding: "10px 14px",
+                borderRadius: "10px",
+                color: "#e2e8f0",
+                border: "1px solid rgba(148,163,184,0.18)",
+                background: "rgba(15,23,42,0.45)",
               }}
             >
-              GitHub
+              Compétences
             </a>
-
             <a
-              href="https://www.linkedin.com/in/alpha-oumar-leno/"
-              target="_blank"
-              rel="noreferrer"
+              href="#experience"
               style={{
-                textDecoration: "none",
-                color: "#fff",
-                border: "1px solid #334155",
-                padding: "12px 18px",
-                borderRadius: "12px",
-                background: "rgba(15, 23, 42, 0.7)",
-                fontWeight: 600,
+                padding: "10px 14px",
+                borderRadius: "10px",
+                color: "#e2e8f0",
+                border: "1px solid rgba(148,163,184,0.18)",
+                background: "rgba(15,23,42,0.45)",
               }}
             >
-              LinkedIn
+              Expérience
             </a>
-
+            <a
+              href="#projects"
+              style={{
+                padding: "10px 14px",
+                borderRadius: "10px",
+                color: "#e2e8f0",
+                border: "1px solid rgba(148,163,184,0.18)",
+                background: "rgba(15,23,42,0.45)",
+              }}
+            >
+              Projets
+            </a>
             <a
               href="#contact"
               style={{
-                textDecoration: "none",
+                padding: "10px 16px",
+                borderRadius: "12px",
                 color: "#081225",
                 background: "#38bdf8",
-                padding: "12px 18px",
-                borderRadius: "12px",
                 fontWeight: 700,
               }}
             >
               Me contacter
             </a>
-          </div>
+          </nav>
         </div>
+      </header>
 
+      {/* HERO */}
+      <section
+        style={{
+          maxWidth: "1180px",
+          margin: "0 auto",
+          padding: "42px 20px 24px",
+        }}
+      >
         <div
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-            gap: "24px",
+            gap: "28px",
             alignItems: "center",
           }}
         >
           <div
             style={{
               background: "rgba(15, 23, 42, 0.55)",
-              border: "1px solid rgba(148, 163, 184, 0.15)",
+              border: "1px solid rgba(148, 163, 184, 0.12)",
               borderRadius: "24px",
               padding: "28px",
               boxShadow: "0 20px 60px rgba(0,0,0,0.25)",
@@ -167,8 +209,8 @@ export default function Home() {
                 padding: "8px 14px",
                 borderRadius: "999px",
                 fontSize: "14px",
-                marginBottom: "20px",
-                fontWeight: 600,
+                marginBottom: "18px",
+                fontWeight: 700,
               }}
             >
               Ingénieur Cloud & IoT • Développeur Salesforce
@@ -176,35 +218,37 @@ export default function Home() {
 
             <h1
               style={{
-                fontSize: "clamp(36px, 8vw, 72px)",
-                lineHeight: 1.05,
+                fontSize: "clamp(38px, 8vw, 76px)",
+                lineHeight: 1.02,
                 margin: "0 0 18px",
-                fontWeight: 800,
+                fontWeight: 900,
               }}
             >
-              Alpha Oumar Leno
+              Alpha
+              <br />
+              Oumar Leno
             </h1>
 
             <p
               style={{
-                fontSize: "clamp(18px, 3.8vw, 26px)",
-                color: "#cbd5e1",
-                marginBottom: "24px",
+                fontSize: "clamp(18px, 3.5vw, 26px)",
+                color: "#dbeafe",
+                marginBottom: "22px",
                 lineHeight: 1.5,
               }}
             >
               Je conçois des solutions techniques à forte valeur ajoutée
-              combinant <span style={{ color: "#38bdf8" }}>Salesforce</span>,
-              <span style={{ color: "#38bdf8" }}> Cloud</span>,
-              <span style={{ color: "#38bdf8" }}> IoT</span> et
-              <span style={{ color: "#38bdf8" }}> DevOps</span>.
+              combinant <span style={{ color: "#38bdf8" }}>Salesforce</span>,{" "}
+              <span style={{ color: "#38bdf8" }}>Cloud</span>,{" "}
+              <span style={{ color: "#38bdf8" }}>IoT</span> et{" "}
+              <span style={{ color: "#38bdf8" }}>DevOps</span>.
             </p>
 
             <p
               style={{
                 fontSize: "17px",
                 color: "#e2e8f0",
-                lineHeight: 1.8,
+                lineHeight: 1.85,
                 marginBottom: "28px",
               }}
             >
@@ -214,16 +258,22 @@ export default function Home() {
               orientation automatisation, fiabilité et impact opérationnel.
             </p>
 
-            <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
+            <div
+              style={{
+                display: "flex",
+                gap: "12px",
+                flexWrap: "wrap",
+              }}
+            >
               <a
                 href="#projects"
                 style={{
                   textDecoration: "none",
                   color: "#081225",
                   background: "#38bdf8",
-                  padding: "14px 22px",
+                  padding: "14px 20px",
                   borderRadius: "14px",
-                  fontWeight: 700,
+                  fontWeight: 800,
                 }}
               >
                 Voir mes projets
@@ -236,16 +286,34 @@ export default function Home() {
                   color: "#fff",
                   border: "1px solid #334155",
                   background: "rgba(15, 23, 42, 0.7)",
-                  padding: "14px 22px",
+                  padding: "14px 20px",
                   borderRadius: "14px",
                   fontWeight: 700,
                 }}
               >
                 Voir mon expérience
               </a>
+
+              <a
+                href="/cv.pdf"
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  textDecoration: "none",
+                  color: "#fff",
+                  border: "1px solid #334155",
+                  background: "rgba(15, 23, 42, 0.7)",
+                  padding: "14px 20px",
+                  borderRadius: "14px",
+                  fontWeight: 700,
+                }}
+              >
+                Télécharger mon CV
+              </a>
             </div>
           </div>
 
+          {/* PHOTO AJUSTÉE */}
           <div
             style={{
               display: "flex",
@@ -254,20 +322,87 @@ export default function Home() {
               padding: "10px",
             }}
           >
-            <img
-              src="/preview.png"
-              alt="Alpha Oumar Leno"
+            <div
               style={{
-                width: "100%",
-                maxWidth: "320px",
-                aspectRatio: "1 / 1",
-                objectFit: "cover",
+                width: "min(72vw, 360px)",
+                height: "min(72vw, 360px)",
                 borderRadius: "50%",
-                border: "4px solid #38bdf8",
-                boxShadow: "0 0 40px rgba(56,189,248,0.5)",
+                padding: "6px",
+                background:
+                  "linear-gradient(135deg, rgba(56,189,248,1), rgba(14,165,233,0.35))",
+                boxShadow: "0 0 55px rgba(56,189,248,0.32)",
               }}
-            />
+            >
+              <img
+                src="/preview.png"
+                alt="Alpha Oumar Leno"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  borderRadius: "50%",
+                  objectFit: "cover",
+                  objectPosition: "center top",
+                  display: "block",
+                  background: "#dbeafe",
+                }}
+              />
+            </div>
           </div>
+        </div>
+      </section>
+
+      {/* INFOS RAPIDES */}
+      <section
+        style={{
+          maxWidth: "1180px",
+          margin: "0 auto",
+          padding: "0 20px 18px",
+        }}
+      >
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+            gap: "16px",
+          }}
+        >
+          {[
+            ["Spécialité", "Salesforce, Cloud, DevOps & IoT"],
+            ["Focus", "Automatisation, Data Model, CI/CD"],
+            ["Environnement", "AWS,Azure, Docker, React, Flutter"],
+            ["Localisation", "Rabat / Casablanca"],
+          ].map(([label, value]) => (
+            <div
+              key={label}
+              style={{
+                background: "rgba(15, 23, 42, 0.55)",
+                border: "1px solid rgba(148,163,184,0.12)",
+                borderRadius: "20px",
+                padding: "20px",
+              }}
+            >
+              <div
+                style={{
+                  color: "#7dd3fc",
+                  fontSize: "14px",
+                  fontWeight: 700,
+                  marginBottom: "8px",
+                }}
+              >
+                {label}
+              </div>
+              <div
+                style={{
+                  color: "#f8fafc",
+                  fontSize: "18px",
+                  fontWeight: 700,
+                  lineHeight: 1.4,
+                }}
+              >
+                {value}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -288,7 +423,13 @@ export default function Home() {
             padding: "28px",
           }}
         >
-          <h2 style={{ fontSize: "clamp(28px, 6vw, 34px)", margin: "0 0 12px", fontWeight: 800 }}>
+          <h2
+            style={{
+              fontSize: "clamp(28px, 6vw, 34px)",
+              margin: "0 0 12px",
+              fontWeight: 800,
+            }}
+          >
             Compétences clés
           </h2>
           <p
@@ -334,7 +475,13 @@ export default function Home() {
         }}
       >
         <div style={{ marginBottom: "20px" }}>
-          <h2 style={{ fontSize: "clamp(28px, 6vw, 34px)", margin: "0 0 12px", fontWeight: 800 }}>
+          <h2
+            style={{
+              fontSize: "clamp(28px, 6vw, 34px)",
+              margin: "0 0 12px",
+              fontWeight: 800,
+            }}
+          >
             Expérience
           </h2>
           <p
@@ -350,76 +497,67 @@ export default function Home() {
           </p>
         </div>
 
-        <div style={{ display: "grid", gap: "20px" }}>
-          <div
-            style={{
-              background: "rgba(15, 23, 42, 0.6)",
-              border: "1px solid rgba(148, 163, 184, 0.12)",
-              borderRadius: "22px",
-              padding: "24px",
-              boxShadow: "0 10px 30px rgba(0,0,0,0.18)",
-            }}
-          >
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+            gap: "20px",
+          }}
+        >
+          {experiences.map((exp) => (
             <div
+              key={exp.title}
               style={{
-                color: "#7dd3fc",
-                fontSize: "14px",
-                fontWeight: 700,
-                marginBottom: "10px",
+                background: "rgba(15, 23, 42, 0.6)",
+                border: "1px solid rgba(148, 163, 184, 0.12)",
+                borderRadius: "22px",
+                padding: "24px",
+                boxShadow: "0 10px 30px rgba(0,0,0,0.18)",
               }}
             >
-              Expérience professionnelle
+              <div
+                style={{
+                  color: "#7dd3fc",
+                  fontSize: "14px",
+                  fontWeight: 700,
+                  marginBottom: "10px",
+                }}
+              >
+                Expérience professionnelle
+              </div>
+
+              <h3
+                style={{
+                  fontSize: "clamp(22px, 5vw, 24px)",
+                  margin: "0 0 8px",
+                  fontWeight: 800,
+                }}
+              >
+                {exp.title}
+              </h3>
+
+              <div
+                style={{
+                  color: "#cbd5e1",
+                  fontSize: "18px",
+                  fontWeight: 600,
+                  marginBottom: "14px",
+                }}
+              >
+                {exp.company}
+              </div>
+
+              <p
+                style={{
+                  color: "#cbd5e1",
+                  lineHeight: 1.75,
+                  fontSize: "16px",
+                }}
+              >
+                {exp.description}
+              </p>
             </div>
-
-            <h3
-              style={{
-                fontSize: "clamp(22px, 5vw, 24px)",
-                margin: "0 0 8px",
-                fontWeight: 800,
-              }}
-            >
-              Consultant Développeur Salesforce
-            </h3>
-
-            <div
-              style={{
-                color: "#cbd5e1",
-                fontSize: "18px",
-                fontWeight: 600,
-                marginBottom: "14px",
-              }}
-            >
-              D&A Technologies
-            </div>
-
-            <p
-              style={{
-                color: "#cbd5e1",
-                lineHeight: 1.75,
-                fontSize: "16px",
-                marginBottom: "16px",
-              }}
-            >
-              Participation à la conception et à l’implémentation de solutions
-              Salesforce orientées métier, avec modélisation des données,
-              développement Apex et LWC, automatisation via Flow et optimisation
-              des processus.
-            </p>
-
-            <ul
-              style={{
-                margin: 0,
-                paddingLeft: "20px",
-                color: "#e2e8f0",
-                lineHeight: 1.9,
-              }}
-            >
-              <li>Conception de solutions Salesforce adaptées aux besoins métiers</li>
-              <li>Développement Apex et Lightning Web Components</li>
-              <li>Automatisation des processus avec Flow Builder</li>
-              <li>Travail sur des cas concrets autour des CEE</li>
-            </ul>
-          </div>
+          ))}
         </div>
       </section>
 
@@ -433,7 +571,13 @@ export default function Home() {
         }}
       >
         <div style={{ marginBottom: "20px" }}>
-          <h2 style={{ fontSize: "clamp(28px, 6vw, 34px)", margin: "0 0 12px", fontWeight: 800 }}>
+          <h2
+            style={{
+              fontSize: "clamp(28px, 6vw, 34px)",
+              margin: "0 0 12px",
+              fontWeight: 800,
+            }}
+          >
             Projets stratégiques
           </h2>
           <p
@@ -526,7 +670,13 @@ export default function Home() {
             padding: "32px",
           }}
         >
-          <h2 style={{ fontSize: "clamp(28px, 6vw, 34px)", margin: "0 0 14px", fontWeight: 800 }}>
+          <h2
+            style={{
+              fontSize: "clamp(28px, 6vw, 34px)",
+              margin: "0 0 14px",
+              fontWeight: 800,
+            }}
+          >
             Contact
           </h2>
 
