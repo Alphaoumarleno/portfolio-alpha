@@ -341,7 +341,7 @@ export default function Home() {
                   height: "100%",
                   borderRadius: "50%",
                   objectFit: "cover",
-                  objectPosition: "center top",
+                  objectPosition: "center 18%",
                   display: "block",
                   background: "#dbeafe",
                 }}
